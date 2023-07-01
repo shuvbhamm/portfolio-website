@@ -139,3 +139,36 @@ main .introduction{
 .socialIcon:hover{
     opacity: .7;
 }
+
+/* about */
+.about{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.about h1{
+    margin-top: 30px;
+    font-size: 1.8em;
+    border-bottom: 5px solid rgb(32, 95, 178);
+}
+.aboutContainer{
+    display: flex;
+    margin: 70px;
+    height: 100%;
+}
+.AboutImage{
+    max-height: 400px;
+    min-width: 350px;
+    border-radius: 15px;
+    background: url("./images/shubham.png");
+    background-size: cover;
+    margin: 0 30px;
+}
+.AboutIntroduction {
+    line-height: 1.5em;
+}
+.AboutIntroduction p{
+    margin-top: 10px;
+}
