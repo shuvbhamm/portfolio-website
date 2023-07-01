@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    min-height: 60px;
+    height: 10vh;
+    padding: 0 100px;
+    box-sizing: border-box;
+    background: white;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.316);
+}
+header .nav-container{
+    display: flex;
+    gap: 25px;
+}
+.nav-container a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+.nav-container a:hover{
+    font-weight: 600;
+    border-bottom: 3px solid rgb(32, 95, 178);
+}
+main{
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+main .introduction{
+    min-width: 50vw;
+    padding-left: 100px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+.introduction h1{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.heroImg{
+    min-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroImg .image{
+    width: 300px;
+    height:300px;
+    background: url('./images/shubham.png');
+    background-size: cover;
+    border-radius: 67% 33% 41% 59% / 50% 41% 59% 50% ;
+    animation: image-rotate 3s ease-in-out alternate infinite;
+    border: 10px solid white;
+    outline: 4px solid rgb(32, 95, 178);
+    /* box-sizing: border-box; */
+}
+@keyframes image-rotate {
+    0%{
+        border-radius: 67% 33% 41% 59% / 50% 41% 59% 50% ;
+    }
+    100%{
+        border-radius: 34% 66% 61% 39% / 68% 42% 58% 32%  ;
+    }
+}
+.introduction .name{
+    color: rgb(32, 95, 178);
+    font-weight:900 ;
+}
+.introduction code{
+    color: lightslategray;
+    font-size: .7em;
+}
+.introduction button{
+    background: rgb(32, 95, 178);
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(32, 95, 178) ;
+}
+.introduction button:hover{
+    background: rgb(26, 64, 113);
+    border-color: rgb(26, 64, 113);
+}
+.introduction .sec-btn{
+    background: white;
+    color: rgb(32, 95, 178);
+    font-weight: 700;
+    border: 2px solid rgb(32, 95, 178) ;
+}
+.introduction .sec-btn:hover{
+    color: white;
+}
+.hi{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 30px;
+    animation: hands 300ms alternate infinite ;
+}
+@keyframes hands {
+    0%{
+        transform: rotate(60deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+.socialMediaLinks{
+    padding-left: 100px;
+    height: 10vh;
+    min-height: 60px;
+}
+.socialIcon{
+    height: 25px;
+    padding-right: 10px;
+}
+.socialIcon:hover{
+    opacity: .7;
+}
