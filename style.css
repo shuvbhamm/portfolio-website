@@ -161,10 +161,14 @@ main .introduction{
 .AboutImage{
     max-height: 400px;
     min-width: 350px;
-    border-radius: 15px;
-    background: url("./images/shubham.png");
+    border-radius: 25px;
+    background: url("./images/shubham-adobe.png");
     background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
     margin: 0 30px;
+    border: 5px solid white;
+    outline: 3px solid rgb(32, 95, 178);
 }
 .AboutIntroduction {
     line-height: 1.5em;
