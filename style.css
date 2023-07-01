@@ -3,8 +3,12 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 body{
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 a{
     color: inherit;
@@ -151,16 +155,17 @@ main .introduction{
 .about h1{
     margin-top: 30px;
     font-size: 1.8em;
+    color: rgb(32, 95, 178);
     border-bottom: 5px solid rgb(32, 95, 178);
 }
 .aboutContainer{
     display: flex;
-    margin: 70px;
+    margin: 60px;
     height: 100%;
 }
 .AboutImage{
-    max-height: 400px;
-    min-width: 350px;
+    max-height: 300px;
+    min-width: 250px;
     border-radius: 25px;
     background: url("./images/shubham-adobe.png");
     background-size: cover;
@@ -171,8 +176,10 @@ main .introduction{
     outline: 3px solid rgb(32, 95, 178);
 }
 .AboutIntroduction {
-    line-height: 1.5em;
+    line-height: 1.6em;
+    word-spacing:3px ;
+    margin: 0 35px;
 }
 .AboutIntroduction p{
-    margin-top: 10px;
+    margin-top: 30px;
 }
