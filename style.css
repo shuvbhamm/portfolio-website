@@ -150,9 +150,9 @@ main .introduction{
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    
 }
-.about h1{
+.subHeading{
     margin-top: 30px;
     font-size: 1.8em;
     color: rgb(32, 95, 178);
@@ -182,4 +182,53 @@ main .introduction{
 }
 .AboutIntroduction p{
     margin-top: 30px;
+}
+
+/* skills section css */
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.skillCard{
+    height: 100px;
+    width: 250px;
+    background: #212231;
+    color: white;
+    display: flex;
+    margin: 30px;
+    border-radius: 20px;
+    transition: 300ms ;
+}
+.skillLogo{
+    height: 100&;
+    width: 50%;
+    background: rgb(32, 95, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2ex;
+}
+.skillsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skillInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.skillLogo i{
+    font-size: 4em;
+    color: white;
+}
+.skillCard:hover{
+    transform: rotateX(10deg) rotateY(-18deg) rotateZ(10deg);
 }
