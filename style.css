@@ -166,14 +166,16 @@ main .introduction{
 .AboutImage{
     max-height: 300px;
     min-width: 250px;
+    height: 300px;
     border-radius: 25px;
     background: url("./images/shubham-adobe.png");
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    margin: 0 30px;
+    margin: 0 30px 30px 0;
     border: 5px solid white;
     outline: 3px solid rgb(32, 95, 178);
+    float: left;
 }
 .AboutIntroduction {
     line-height: 1.6em;
@@ -290,6 +292,7 @@ main .introduction{
 .EducationDetail h2{
     padding-top: 45px;
     padding-bottom: 10px;
+    font-size: 1.3rem;
 }
 .EducationDetail h4{
     font-weight: 500;
